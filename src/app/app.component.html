@@ -7,84 +7,88 @@
           <div class="home-social">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="#"
-                  ><i class="fa fa-facebook" aria-hidden="true"></i
-                ></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               </li>
               <li class="list-inline-item">
                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="#"
-                  ><i class="fa fa-google-plus" aria-hidden="true"></i
-                ></a>
+                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="#"
-                  ><i class="fa fa-dribbble" aria-hidden="true"></i
-                ></a>
+                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
               </li>
               <li class="list-inline-item">
                 <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="#"
-                  ><i class="fa fa-github-alt" aria-hidden="true"></i
-                ></a>
+                <a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
               </li>
             </ul>
           </div>
           <div class="banner-info">
-            <h1>Hello, I am</h1>
-            <h2>Balakrishna Jonnadula</h2>
-            <h3>UI Developer</h3>
+            <p style="
+                font-size: 45px;
+                margin-bottom: 0;
+                font-family: 'Pacifico', cursive;
+              ">
+              Hello, I am
+            </p>
+            <h2 style="
+                font-size: 75px;
+                margin-top: 0;
+                line-height: 92px;
+                margin-left: -8px;
+              ">
+              Balakrishna Jonnadula
+            </h2>
+            <h3 style="
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 26px;
+              ">
+              UI Developer
+            </h3>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!--  -->
-<div class="container">
-  <div id="navigation" class="menu-two">
-    <div class="navbar navbar-expand-lg">
-      <div class="navbar-header">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target=".navbar-collapse"
-          aria-controls="navbar-collapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"
-            ><i class="fa fa-align-justify"></i
-          ></span>
+
+<!-- nav bar-->
+<nav class="navbar navbar-dark navbar-expand-lg sticky-top" (scroll)="onWindowScroll()">
+  <div class="container-fluid">
+    
+      <div class="ms-5 col-lg-3 col-xl-4 col-xxl-4" style="height: 60px; line-height: 60px;">
+        <a class="navbar-brand  p-0" href="#" style="color: #fff;">Balakrishna Jonnadula</a>
+      </div>
+      <div class="me-5 bg-light">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-dark navbar-toggler-icon">
+            
+          </span>
         </button>
-        <div class="navbar-brand logo">
-          <a href="index.html"
-            ><img class="img-fluid" src="" alt="Image"
-          /></a>
-        </div>
       </div>
-      <div id="navbar-collapse" class="collapse navbar-collapse">
-        <nav id="mainmenu">
-          <ul class="nav navbar-nav">
-            <li class="scroll current"><a href="#home-banner">Home</a></li>
-            <li class="scroll"><a href="#about">About Me</a></li>
-            <li class="scroll"><a href="#skill">Skills</a></li>
-            <li class="scroll"><a href="#exprience">Experience</a></li>
-            <li class="scroll"><a href="#education">Education</a></li>
-            <li class="scroll"><a href="#portfolio">Portfolio</a></li>
-            <li class="scroll"><a href="#contact">Contact</a></li>
-            <li class="scroll"><a href="#blog">Blog</a></li>
-          </ul>
-        </nav>
-      </div>
+        
+        <div class="collapse navbar-collapse col-lg-9 col-xl-8 col-xxl-8" id="navbarSupportedContent">
+          <nav class="mainmenu ">
+            <ul class="nav navbar-nav">
+              <li class=""><a class="line_none list_item" href="#home-banner">Home</a></li>
+              <li class=""><a class="line_none list_item" href="#about">About Me</a></li>
+              <li class=""><a class="line_none list_item" href="#skill">Skills</a></li>
+              <!-- <li class=""><a class="line_none list_item" href="#exprience">Experience</a></li> -->
+              <li class=""><a class="line_none list_item" href="#education">Education</a></li>
+              <li class=""><a class="line_none list_item" href="#portfolio">Portfolio</a></li>
+              <li class=""><a class="line_none list_item" href="#contact">Contact</a></li>
+              <li class=""><a class="line_none list_item" href="#blog">Blog</a></li>
+            </ul>
+          </nav>
+        </div> 
     </div>
-  </div>
-</div>
+</nav>
+
 <!--  -->
 <div id="about" class="about-section bg-color section-padding">
   <div class="container">
@@ -161,42 +165,24 @@
               <span class="rating-count pull-right">70%</span>
               <div class="skill-progress">
                 <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="70"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 70%"
-                  ></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 70%"></div>
                 </div>
               </div>
               <label>JavaScript</label>
               <span class="rating-count pull-right">50%</span>
               <div class="skill-progress">
                 <div class="progress">
-                  <div
-                    class="progress-bar bar1"
-                    role="progressbar"
-                    aria-valuenow="50"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 50%"
-                  ></div>
+                  <div class="progress-bar bar1" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 50%"></div>
                 </div>
               </div>
               <label>jQuery</label>
               <span class="rating-count pull-right">50%</span>
               <div class="skill-progress">
                 <div class="progress">
-                  <div
-                    class="progress-bar bar2"
-                    role="progressbar"
-                    aria-valuenow="50"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 50%"
-                  ></div>
+                  <div class="progress-bar bar2" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 50%"></div>
                 </div>
               </div>
             </div>
@@ -205,42 +191,24 @@
               <span class="rating-count pull-right">80%</span>
               <div class="skill-progress">
                 <div class="progress">
-                  <div
-                    class="progress-bar bar3"
-                    role="progressbar"
-                    aria-valuenow="80"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 80%"
-                  ></div>
+                  <div class="progress-bar bar3" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 80%"></div>
                 </div>
               </div>
               <label>Angular</label>
               <span class="rating-count pull-right">60%</span>
               <div class="skill-progress">
                 <div class="progress">
-                  <div
-                    class="progress-bar bar4"
-                    role="progressbar"
-                    aria-valuenow="60"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 60%"
-                  ></div>
+                  <div class="progress-bar bar4" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 60%"></div>
                 </div>
               </div>
               <label>Angular Material</label>
               <span class="rating-count pull-right">70%</span>
               <div class="skill-progress">
                 <div class="progress">
-                  <div
-                    class="progress-bar bar5"
-                    role="progressbar"
-                    aria-valuenow="70"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 70%"
-                  ></div>
+                  <div class="progress-bar bar5" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 70%"></div>
                 </div>
               </div>
             </div>
@@ -258,29 +226,17 @@
               <li class="chart" data-percent="100">
                 <span class="percent">70</span>
                 <h5>English</h5>
-                <canvas
-                  height="137"
-                  width="137"
-                  style="height: 110px; width: 110px"
-                ></canvas>
+                <canvas height="137" width="137" style="height: 110px; width: 110px"></canvas>
               </li>
               <li class="chart" data-percent="90">
                 <span class="percent percent1">90</span>
                 <h5>Telugu</h5>
-                <canvas
-                  height="137"
-                  width="137"
-                  style="height: 110px; width: 110px"
-                ></canvas>
+                <canvas height="137" width="137" style="height: 110px; width: 110px"></canvas>
               </li>
               <li class="chart" data-percent="100">
                 <span class="percent percent2">60</span>
                 <h5>Hindi</h5>
-                <canvas
-                  height="137"
-                  width="137"
-                  style="height: 110px; width: 110px"
-                ></canvas>
+                <canvas height="137" width="137" style="height: 110px; width: 110px"></canvas>
               </li>
             </ul>
           </div>
@@ -407,11 +363,9 @@
             </p>
           </div>
           <div class="education-info">
-            <img
-              class="img-fluid"
+            <img class="img-fluid"
               src="https://storage.googleapis.com/ezap-prod/colleges/3389/chirala-engineering-college-prakasam-logo.jfif"
-              alt="Image"
-            />
+              alt="Image" />
             <h3>Chirala Engineering College</h3>
             <h5>Bachelor or Technology</h5>
             <h6>2017 - 2020</h6>
@@ -423,11 +377,9 @@
           </div>
           <hr />
           <div class="education-info">
-            <img
-              class="img-fluid"
+            <img class="img-fluid"
               src="https://www.indiacollegeshub.com/upload/college-logo/diviseema-polytechnic-krishna.jpg?h=100&w=100&scale=both&quality=75"
-              alt="Image"
-            />
+              alt="Image" />
             <h3>Diviseema Polytechnic College</h3>
             <h5>Diploma</h5>
             <h6>2013 - 2016</h6>
@@ -477,16 +429,10 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="portfolio-item">
-                <img
-                  class="img-fluid"
-                  src="images/portfolio/1.jpg"
-                  alt="Image"
-                />
+                <img class="img-fluid" src="images/portfolio/1.jpg" alt="Image" />
                 <div class="portfolio-overlay">
                   <div class="portfolio-info">
-                    <a href="images/portfolio/1.jpg"
-                      ><i class="fa fa-camera-retro" aria-hidden="true"></i
-                    ></a>
+                    <a href="images/portfolio/1.jpg"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
                     <h3>Book Cover</h3>
                     <p>Print Design</p>
                   </div>
@@ -495,16 +441,10 @@
             </div>
             <div class="col-sm-6">
               <div class="portfolio-item">
-                <img
-                  class="img-fluid"
-                  src="images/portfolio/2.jpg"
-                  alt="Image"
-                />
+                <img class="img-fluid" src="images/portfolio/2.jpg" alt="Image" />
                 <div class="portfolio-overlay">
                   <div class="portfolio-info">
-                    <a href="images/portfolio/2.jpg"
-                      ><i class="fa fa-camera-retro" aria-hidden="true"></i
-                    ></a>
+                    <a href="images/portfolio/2.jpg"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
                     <h3>Book Cover</h3>
                     <p>Print Design</p>
                   </div>
@@ -513,16 +453,10 @@
             </div>
             <div class="col-sm-6">
               <div class="portfolio-item">
-                <img
-                  class="img-fluid"
-                  src="images/portfolio/3.jpg"
-                  alt="Image"
-                />
+                <img class="img-fluid" src="images/portfolio/3.jpg" alt="Image" />
                 <div class="portfolio-overlay">
                   <div class="portfolio-info">
-                    <a href="images/portfolio/3.jpg"
-                      ><i class="fa fa-camera-retro" aria-hidden="true"></i
-                    ></a>
+                    <a href="images/portfolio/3.jpg"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
                     <h3>Book Cover</h3>
                     <p>Print Design</p>
                   </div>
@@ -531,16 +465,10 @@
             </div>
             <div class="col-sm-6">
               <div class="portfolio-item">
-                <img
-                  class="img-fluid"
-                  src="images/portfolio/4.jpg"
-                  alt="Image"
-                />
+                <img class="img-fluid" src="images/portfolio/4.jpg" alt="Image" />
                 <div class="portfolio-overlay">
                   <div class="portfolio-info">
-                    <a href="images/portfolio/4.jpg"
-                      ><i class="fa fa-camera-retro" aria-hidden="true"></i
-                    ></a>
+                    <a href="images/portfolio/4.jpg"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
                     <h3>Book Cover</h3>
                     <p>Print Design</p>
                   </div>
@@ -549,16 +477,10 @@
             </div>
             <div class="col-sm-6">
               <div class="portfolio-item">
-                <img
-                  class="img-fluid"
-                  src="images/portfolio/5.jpg"
-                  alt="Image"
-                />
+                <img class="img-fluid" src="images/portfolio/5.jpg" alt="Image" />
                 <div class="portfolio-overlay">
                   <div class="portfolio-info">
-                    <a href="images/portfolio/5.jpg"
-                      ><i class="fa fa-camera-retro" aria-hidden="true"></i
-                    ></a>
+                    <a href="images/portfolio/5.jpg"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
                     <h3>Book Cover</h3>
                     <p>Print Design</p>
                   </div>
@@ -567,16 +489,10 @@
             </div>
             <div class="col-sm-6">
               <div class="portfolio-item">
-                <img
-                  class="img-fluid"
-                  src="images/portfolio/6.jpg"
-                  alt="Image"
-                />
+                <img class="img-fluid" src="images/portfolio/6.jpg" alt="Image" />
                 <div class="portfolio-overlay">
                   <div class="portfolio-info">
-                    <a href="images/portfolio/6.jpg"
-                      ><i class="fa fa-camera-retro" aria-hidden="true"></i
-                    ></a>
+                    <a href="images/portfolio/6.jpg"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
                     <h3>Book Cover</h3>
                     <p>Print Design</p>
                   </div>
@@ -585,16 +501,10 @@
             </div>
             <div class="col-sm-6">
               <div class="portfolio-item">
-                <img
-                  class="img-fluid"
-                  src="images/portfolio/7.jpg"
-                  alt="Image"
-                />
+                <img class="img-fluid" src="images/portfolio/7.jpg" alt="Image" />
                 <div class="portfolio-overlay">
                   <div class="portfolio-info">
-                    <a href="images/portfolio/7.jpg"
-                      ><i class="fa fa-camera-retro" aria-hidden="true"></i
-                    ></a>
+                    <a href="images/portfolio/7.jpg"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
                     <h3>Book Cover</h3>
                     <p>Print Design</p>
                   </div>
@@ -603,16 +513,10 @@
             </div>
             <div class="col-sm-6">
               <div class="portfolio-item">
-                <img
-                  class="img-fluid"
-                  src="images/portfolio/8.jpg"
-                  alt="Image"
-                />
+                <img class="img-fluid" src="images/portfolio/8.jpg" alt="Image" />
                 <div class="portfolio-overlay">
                   <div class="portfolio-info">
-                    <a href="images/portfolio/8.jpg"
-                      ><i class="fa fa-camera-retro" aria-hidden="true"></i
-                    ></a>
+                    <a href="images/portfolio/8.jpg"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
                     <h3>Book Cover</h3>
                     <p>Print Design</p>
                   </div>
@@ -675,34 +579,22 @@
                 <h3>Social profiles</h3>
                 <ul class="social list-inline">
                   <li>
-                    <a href="#"
-                      ><i class="fa fa-facebook" aria-hidden="true"></i
-                    ></a>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><i class="fa fa-twitter" aria-hidden="true"></i
-                    ></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><i class="fa fa-google-plus" aria-hidden="true"></i
-                    ></a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><i class="fa fa-dribbble" aria-hidden="true"></i
-                    ></a>
+                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><i class="fa fa-behance" aria-hidden="true"></i
-                    ></a>
+                    <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><i class="fa fa-github-alt" aria-hidden="true"></i
-                    ></a>
+                    <a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
                   </li>
                 </ul>
               </li>
@@ -722,53 +614,27 @@
                 enim ad minim veniam.
               </p>
             </div>
-            <form
-              id="contact-form"
-              class="contact-form"
-              name="contact-form"
-              method="post"
-              action="#"
-            >
+            <form id="contact-form" class="contact-form" name="contact-form" method="post" action="#">
               <div class="row">
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      required="required"
-                      placeholder="Full Name"
-                    />
+                    <input type="text" class="form-control" required="required" placeholder="Full Name" />
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      required="required"
-                      placeholder="Your email id"
-                    />
+                    <input type="email" class="form-control" required="required" placeholder="Your email id" />
                   </div>
                 </div>
                 <div class="col-sm-12">
                   <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      required="required"
-                      placeholder="Subject"
-                    />
+                    <input type="text" class="form-control" required="required" placeholder="Subject" />
                   </div>
                 </div>
                 <div class="col-sm-12">
                   <div class="form-group">
-                    <textarea
-                      name="message"
-                      required="required"
-                      class="form-control"
-                      rows="7"
-                      placeholder="Your message"
-                    ></textarea>
+                    <textarea name="message" required="required" class="form-control" rows="7"
+                      placeholder="Your message"></textarea>
                   </div>
                 </div>
               </div>
@@ -814,9 +680,7 @@
                 </div>
                 <div class="entry-title">
                   <h2>
-                    <a href="blog.html"
-                      >Dashboard Design: 50+ Brilliant Examples and Resources</a
-                    >
+                    <a href="blog.html">Dashboard Design: 50+ Brilliant Examples and Resources</a>
                   </h2>
                 </div>
               </div>
@@ -834,9 +698,7 @@
                 </div>
                 <div class="entry-title">
                   <h2>
-                    <a href="blog.html"
-                      >Dashboard Design: 50+ Brilliant Examples and Resources</a
-                    >
+                    <a href="blog.html">Dashboard Design: 50+ Brilliant Examples and Resources</a>
                   </h2>
                 </div>
               </div>
@@ -854,9 +716,7 @@
                 </div>
                 <div class="entry-title">
                   <h2>
-                    <a href="blog.html"
-                      >Dashboard Design: 50+ Brilliant Examples and Resources</a
-                    >
+                    <a href="blog.html">Dashboard Design: 50+ Brilliant Examples and Resources</a>
                   </h2>
                 </div>
               </div>
@@ -874,9 +734,7 @@
                 </div>
                 <div class="entry-title">
                   <h2>
-                    <a href="#"
-                      >Dashboard Design: 50+ Brilliant Examples and Resources</a
-                    >
+                    <a href="#">Dashboard Design: 50+ Brilliant Examples and Resources</a>
                   </h2>
                 </div>
               </div>
@@ -894,9 +752,7 @@
                 </div>
                 <div class="entry-title">
                   <h2>
-                    <a href="#"
-                      >Dashboard Design: 50+ Brilliant Examples and Resources</a
-                    >
+                    <a href="#">Dashboard Design: 50+ Brilliant Examples and Resources</a>
                   </h2>
                 </div>
               </div>
@@ -914,9 +770,7 @@
                 </div>
                 <div class="entry-title">
                   <h2>
-                    <a href="#"
-                      >Dashboard Design: 50+ Brilliant Examples and Resources</a
-                    >
+                    <a href="#">Dashboard Design: 50+ Brilliant Examples and Resources</a>
                   </h2>
                 </div>
               </div>
@@ -930,7 +784,7 @@
 
 <!-- My Resume -->
 
-<div id="profile" class="profile-section bg-color section-padding">
+<!-- <div id="profile" class="profile-section bg-color section-padding">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
@@ -1123,27 +977,15 @@
                     <label>Photoshop</label>
                     <div class="skill-progress">
                       <div class="progress">
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="90"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          style="width: 90%"
-                        ></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 90%"></div>
                       </div>
                     </div>
                     <label>WordPress</label>
                     <div class="skill-progress">
                       <div class="progress">
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="50"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          style="width: 50%"
-                        ></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 50%"></div>
                       </div>
                     </div>
                   </div>
@@ -1153,27 +995,15 @@
                     <label>Illustrator</label>
                     <div class="skill-progress">
                       <div class="progress">
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="40"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          style="width: 40%"
-                        ></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 40%"></div>
                       </div>
                     </div>
                     <label>Joomla</label>
                     <div class="skill-progress">
                       <div class="progress">
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="60"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          style="width: 60%"
-                        ></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 60%"></div>
                       </div>
                     </div>
                   </div>
@@ -1183,27 +1013,15 @@
                     <label>Html 5 &amp; CSS 3</label>
                     <div class="skill-progress">
                       <div class="progress">
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="95"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          style="width: 95%"
-                        ></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 95%"></div>
                       </div>
                     </div>
                     <label>PHP</label>
                     <div class="skill-progress">
                       <div class="progress">
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="70"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          style="width: 70%"
-                        ></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 70%"></div>
                       </div>
                     </div>
                   </div>
@@ -1309,11 +1127,9 @@
           </div>
         </div>
         <div class="button">
-          <a href="#" class="btn btn-primary"
-            >Download My Resume as a .pdf file</a
-          >
+          <a href="#" class="btn btn-primary">Download My Resume as a .pdf file</a>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div> -->
